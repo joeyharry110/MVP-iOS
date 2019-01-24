@@ -23,7 +23,7 @@
  @param block 设置cell回调
  @return 数据源对象
  */
-- (instancetype)initWithTableView:(UITableView*)tableView identifier:(NSString *)identifer cellForRow:(void (^)(UITableViewCell *cell, id model))block;
+- (instancetype)initWithTableView:(UITableView*)tableView identifier:(NSString *)identifer cellForRow:(void (^)(id cell, id model))block;
 
 /**
  添加数据

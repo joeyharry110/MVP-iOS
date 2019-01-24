@@ -58,9 +58,8 @@
 
 - (RSTableViewDataSource *)dataSource{
     if (!_dataSource) {
-        _dataSource = [[RSTableViewDataSource alloc] initWithTableView:self.tableView identifier:@"main_list_cell" cellForRow:^(UITableViewCell *cell, id model) {
-            NewsCell* nCell = (NewsCell*)cell;
-            nCell.model = model;
+        _dataSource = [[RSTableViewDataSource alloc] initWithTableView:self.tableView identifier:@"main_list_cell" cellForRow:^(NewsCell *cell, id model) {
+            cell.model = model;
         }];
     }
     return _dataSource;
